@@ -5,6 +5,6 @@ nginx:
   ports:
     - "80:80"
 kestrel:
-  build: .
+  image: frannsoftdev/docker-nginx-test
   expose:
     - "5000"
