@@ -29,7 +29,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - web-root:/var/www/html
+      - web-root:/app
       - ./nginx-conf:/etc/nginx/conf.d
       - certbot-etc:/etc/letsencrypt
       - certbot-var:/var/lib/letsencrypt
@@ -44,7 +44,7 @@ services:
     volumes:
       - certbot-etc:/etc/letsencrypt
       - certbot-var:/var/lib/letsencrypt
-      - web-root:/var/www/html
+      - web-root:/app
     depends_on:
       - webserver
     command: certonly --webroot --webroot-path=/var/www/html --email frannsoftdev@outlook.com --agree-tos --no-eff-email --staging -d jackandwesgamingadventures.com  -d www.jackandwesgamingadventures.com
