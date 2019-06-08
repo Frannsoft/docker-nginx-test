@@ -1,0 +1,12 @@
+E:\Development\Webapps\dockernginxtut\dockernginxtut\bin\Debug\netcoreapp2.2\dockernginxtut.deps.json
+E:\Development\Webapps\dockernginxtut\dockernginxtut\bin\Debug\netcoreapp2.2\dockernginxtut.runtimeconfig.json
+E:\Development\Webapps\dockernginxtut\dockernginxtut\bin\Debug\netcoreapp2.2\dockernginxtut.runtimeconfig.dev.json
+E:\Development\Webapps\dockernginxtut\dockernginxtut\bin\Debug\netcoreapp2.2\dockernginxtut.dll
+E:\Development\Webapps\dockernginxtut\dockernginxtut\bin\Debug\netcoreapp2.2\dockernginxtut.pdb
+E:\Development\Webapps\dockernginxtut\dockernginxtut\obj\Debug\netcoreapp2.2\dockernginxtut.csprojAssemblyReference.cache
+E:\Development\Webapps\dockernginxtut\dockernginxtut\obj\Debug\netcoreapp2.2\dockernginxtut.csproj.CoreCompileInputs.cache
+E:\Development\Webapps\dockernginxtut\dockernginxtut\obj\Debug\netcoreapp2.2\dockernginxtut.RazorAssemblyInfo.cache
+E:\Development\Webapps\dockernginxtut\dockernginxtut\obj\Debug\netcoreapp2.2\dockernginxtut.RazorAssemblyInfo.cs
+E:\Development\Webapps\dockernginxtut\dockernginxtut\obj\Debug\netcoreapp2.2\dockernginxtut.RazorTargetAssemblyInfo.cache
+E:\Development\Webapps\dockernginxtut\dockernginxtut\obj\Debug\netcoreapp2.2\dockernginxtut.dll
+E:\Development\Webapps\dockernginxtut\dockernginxtut\obj\Debug\netcoreapp2.2\dockernginxtut.pdb
