@@ -49,15 +49,15 @@ services:
       - webserver
     command: certonly --webroot --webroot-path=/var/www/html --email frannsoftdev@outlook.com --agree-tos --no-eff-email --staging -d jackandwesgamingadventures.com  -d www.jackandwesgamingadventures.com
 
-  volumes:
-    certbot-etc:
-    certbot-var:
-    web-root:
-        driver: local
-        driver_opts:
-            type: none
-            device: /home/franndotexe/docker-nginx-test/
-            o: bind
+volumes:
+  certbot-etc:
+  certbot-var:
+  web-root:
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/franndotexe/docker-nginx-test/
+      o: bind
 
 networks:
   app-network:
