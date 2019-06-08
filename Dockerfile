@@ -1,6 +1,7 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
 
 COPY dockernginxtut/*.csproj ./app/dockernginxtut/
+COPY index.html ./app/
 
 WORKDIR /app/dockernginxtut
 RUN dotnet restore
