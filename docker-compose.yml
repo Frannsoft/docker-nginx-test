@@ -23,12 +23,17 @@ services:
       - app-network
 
   webserver:
+    build: ./nginx
+    links:
+        - kestrel:kestrel
+    ports:
+        - "80:80"
     image: nginx:mainline-alpine
     container_name: webserver
     restart: unless-stopped
-    ports:
-      - "80:80"
-      - "443:443"
+    # ports:
+    #   - "80:80"
+    #   - "443:443"
     volumes:
       - web-root:/var/www/html
       - ./nginx-conf:/etc/nginx/conf.d
