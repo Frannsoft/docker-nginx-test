@@ -25,10 +25,10 @@ services:
   webserver:
     build: ./nginx
     links:
-        - kestrel:kestrel
+      - kestrel:kestrel
     ports:
-        - "80:80"
-        - "443:443"
+      - "80:80"
+      - "443:443"
     image: nginx:mainline-alpine
     container_name: webserver
     restart: unless-stopped
@@ -37,6 +37,7 @@ services:
       - ./nginx-conf:/etc/nginx/conf.d
       - certbot-etc:/etc/letsencrypt
       - certbot-var:/var/lib/letsencrypt
+      - dhparam:/etc/ssl/certs
     depends_on:
       - kestrel
     networks:
@@ -61,6 +62,12 @@ volumes:
     driver_opts:
       type: none
       device: /home/franndotexe/docker-nginx-test/
+      o: bind
+  dhparam:
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/franndotexe/docker-nginx-test/dhparam/
       o: bind
 
 networks:
