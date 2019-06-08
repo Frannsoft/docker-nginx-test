@@ -41,7 +41,7 @@ namespace dockernginxtut
                 //app.UseHsts();
             }
 
-            //app.UseHttpsRedirection(); //changing something
+            //app.UseHttpsRedirection(); //changing something //another change
             app.UseMvc();
         }
     }
