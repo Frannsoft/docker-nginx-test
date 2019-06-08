@@ -1,10 +1,11 @@
+
+kestrel:
+  image: frannsoftdev/docker-nginx-test
+  expose:
+    - "5000"
 nginx:
   build: ./nginx
   links:
     - kestrel:kestrel
   ports:
     - "80:80"
-kestrel:
-  image: frannsoftdev/docker-nginx-test
-  expose:
-    - "5000"
